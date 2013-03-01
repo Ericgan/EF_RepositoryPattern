@@ -3,12 +3,12 @@ using IDALServices;
 
 namespace DALServices
 {
-    public class DALContext : IDALContext
+    public class PkgOrderDALContext : IDALContext
     {
         private PkgOrderDB dbContext = null;
         private IPkgOrderRepository pkgOrderRepository = null;
 
-        public DALContext()
+        public PkgOrderDALContext()
         {
             this.dbContext = new PkgOrderDB();
         }

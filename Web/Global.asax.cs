@@ -46,7 +46,7 @@ namespace Web
         {
             var container = new UnityContainer();
             container.RegisterType<IPkgOrderService, PkgOrderService>(new PerThreadLifetimeManager())
-                          .RegisterType<IDALContext, DALContext>();
+                          .RegisterType<IDALContext, PkgOrderDALContext>();
             DependencyResolver.SetResolver(new UnityDependencyResolver(container));
         }
     }
